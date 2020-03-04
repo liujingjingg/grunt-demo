@@ -1,12 +1,12 @@
 /* global module:true */
 module.exports=function(grunt){
   grunt.initConfig({
-    cssmin:{
-      'rectangle.min.css':'jisuanqi.css'
+    uglify:{
+      'rectangle.min.js':'jisuanqi.js'
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default',['cssmin']);
+  grunt.registerTask('default',['uglify']);
 };
